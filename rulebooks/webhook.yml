@@ -20,7 +20,8 @@
       condition: event.payload is defined
       action:
        debug: 
-        msg: "{{ event.payload.result }}"
+        msg: webhook
+        #"{{ event.payload.result }}"
          
         #run_job_template:
         #  name: Splunk Resolve Issue Demo
