@@ -1,5 +1,5 @@
 ---
-- name: webhook Source Example
+- name: webhook Source Demo
   hosts: all
   sources:
     - name: listen for alerts
