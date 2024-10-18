@@ -17,7 +17,6 @@
   rules:
 
     - name: Interface Alert
-      #condition: event.payload is defined
       condition: events.body is defined
       action:
        debug: 
