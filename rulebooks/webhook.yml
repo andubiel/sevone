@@ -21,9 +21,7 @@
       action:
        debug: 
         msg:
-        - "{{ event.payload.entry.messaging.object_name }}" 
-        - "{{ event.payload.entry.messaging.threshold_name }}"
-        - "{{ event.payload.entry.messaging.device_name }}"
+        - "{{ event.payload }}" 
         
           
 
