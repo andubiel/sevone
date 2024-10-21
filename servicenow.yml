@@ -1,0 +1,11 @@
+---
+- name: Triage Down Interfaces
+  hosts: localhost
+  gather_facts: False
+  tasks:
+   
+    - name: Grab Current Time
+      set_fact: current_time="{{ lookup('pipe','date +%Y-%m-%d\ %H:%M:%S') }}"
+
+    - ansible.builtin.debug:
+         msg: "{{ eventdata }}"

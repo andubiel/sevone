@@ -19,16 +19,9 @@
     - name: Interface Alert
       condition: event.payload is defined
       action:
-       debug: 
-        msg:
-        - "{{ event.payload }}" 
-        
-          
-
-        #run_job_template:
-        #  name: Splunk Resolve Issue Demo
-        #  organization: Default
-        #  job_args:
-        #    extra_vars:
-        #       eventdata: "{{ event.payload.result }}"
-        #       _hosts: "{{ event.payload.result.host }}"
+        run_job_template:
+          name: EDA-SevOne
+          organization: Default
+          job_args:
+            extra_vars:
+               eventdata: "{{ event.payload }}"
